@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@extends('layouts.master')
 
 <head>
 <meta charset="UTF-8">
@@ -11,6 +12,10 @@
 </head>
 
 <body>
+
+@section('pageTitle', 'Home')
+
+@section('main')
   <div class="container">
     <div class="main">
       <div class="task-summary-container">
@@ -27,6 +32,7 @@
       </div>
     </div>
   </div>
+@endsection
 </body>
 
 </html>
