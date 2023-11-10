@@ -59,6 +59,7 @@
               Not Started
           @endswitch
         </div>
+
         <!-- Ditambahkan -->
         <div>
           <a href="{{ route('tasks.edit', ['id' => $task->id]) }}">Edit</a>
@@ -67,6 +68,7 @@
     @endforeach
   </div>
 @endsection
+
 
 </body>
 
