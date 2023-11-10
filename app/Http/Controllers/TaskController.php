@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\tasks;
+
 class TaskController extends Controller
 {
     private $tasks;
@@ -75,4 +77,14 @@ class TaskController extends Controller
 
         return view('tasks.edit', ['pageTitle' => $pageTitle, 'task' => $task]);
     }
+
+    public function create()
+    {
+        $pageTitle = 'Create Task';
+        $tasks = $this->tasks;
+
+        $newtask = $tasks;
+        return view('tasks.create', ['pageTitle' => $pageTitle, 'task' => $newtask]);
+    }
+
 }
